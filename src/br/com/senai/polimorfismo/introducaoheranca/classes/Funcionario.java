@@ -1,4 +1,4 @@
-package br.com.senai.polimorfismo;
+package br.com.senai.polimorfismo.introducaoheranca.classes;
 
 public class Funcionario {
     private String nome;

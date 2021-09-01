@@ -1,4 +1,6 @@
-package br.com.senai.polimorfismo;
+package br.com.senai.polimorfismo.introducaoheranca.test;
+
+import br.com.senai.polimorfismo.introducaoheranca.classes.Gerente;
 
 public class FuncionarioTest {
     public static void main(String[] args) {

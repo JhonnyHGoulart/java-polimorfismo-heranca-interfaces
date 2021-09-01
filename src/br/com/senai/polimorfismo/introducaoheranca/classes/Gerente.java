@@ -1,4 +1,6 @@
-package br.com.senai.polimorfismo;
+package br.com.senai.polimorfismo.introducaoheranca.classes;
+
+import br.com.senai.polimorfismo.introducaoheranca.classes.Funcionario;
 
 public class Gerente extends Funcionario {
     private int senha;
