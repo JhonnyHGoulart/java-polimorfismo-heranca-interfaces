@@ -1,0 +1,7 @@
+package br.com.senai.polimorfismo.herancaeconstrutores.classes;
+
+public class ContaCorrente extends Conta {
+    public ContaCorrente(int agencia, int numero) {
+        super(agencia, numero);
+    }
+}
