@@ -1,7 +1,11 @@
 package br.com.senai.polimorfismo.interfaces.classes;
 
 public class Gerente extends Funcionario implements Autenticavel {
-    private int senha;
+    private AltenticacaoUltil autenticador;
+
+    public Gerente(){
+        this.autenticador = new AltenticacaoUltil();
+    }
 
     @Override
     public double getBonificacao() {
@@ -11,15 +15,12 @@ public class Gerente extends Funcionario implements Autenticavel {
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.autenticador.setSenha(senha);
     }
 
     @Override
     public boolean autenticaSenha(int senha) {
-        if (this.senha == senha) {
-            return true;
-        }
-        return false;
+        return this.autenticador.autenticaSenha(senha);
     }
 
 
